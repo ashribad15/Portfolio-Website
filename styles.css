@@ -88,22 +88,6 @@ span{
   font-size: 80px;
   font-family: 'Caveat', cursive;
 }
-
-.images{
-  width: 40%;
-  height: 60%;
-  position: fixed;
-  bottom: 0;
-  right: 100px;
-}
-
-.images img{
-  height: 60%;
-  position:fixed;
-  left: 65%;
-  bottom: 20%;
-}
-
 .social{
   margin-left: 8%;
   margin-top: 6%;
