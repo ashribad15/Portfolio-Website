@@ -102,6 +102,17 @@ span{
 .social a:hover{
   color: black;
 }
+.infocontainer {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  box-sizing: border-box;
+}
 
 @media only screen and (min-width: 768px) {
     .infocontainer {
