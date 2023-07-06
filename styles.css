@@ -15,31 +15,30 @@
   justify-content: center;
 }
 
-nav{
+.navbar {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.navbar nav ul {
   display: flex;
-  width: 50%;
-  margin: auto;
-  vertical-align: top;
-  margin-top: 2%;
-  margin-left: 50%;
   justify-content: space-between;
-}
-
-
-nav ul li {
-  display: inline-block;
+  align-items: center;
   list-style: none;
-  margin: 9px 18px;
+  margin: 0;
+  padding: 0;
 }
 
-nav ul li a{
+.navbar nav ul li {
+  margin-right: 20px;
+}
+
+.navbar nav ul li a {
   text-decoration: none;
-  color: #000;
+  color: black;
   font-weight: bold;
-  font-size: 20px;
-
+  font-size: 16px;
 }
-
 nav ul li a:hover{
   color: orange;
 }
@@ -158,16 +157,23 @@ span{
     }
   
 }
+@media only screen and (max-width: 768px) {
+  .navbar {
+    padding: 10px;
+  }
 
-/* about me tab */
+  .navbar nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.introabout{
-    width: 100%;
-    height: 10vh;
-    justify-content: center;
-
+  .navbar nav ul li {
+    margin: 10px 0;
+  }
 }
-  
+/* about me tab */
+ 
   header {
     background-color:black;
     padding: 10px;
@@ -271,10 +277,6 @@ span{
 
  /*contact me*/
 
- .introcontact{
-    width: 100%;
-    height: 50px;
- }  
   .containercontact {
     max-width: 600px;
     margin: 70px auto;
@@ -352,10 +354,6 @@ span{
 
  /*BLOGSECTION*/
 
-.introblog{
-  width: 100%;
-  height: 50px;
-}
 .blog-tab {
   padding: 20px;
   margin-top: 10px;
@@ -435,12 +433,6 @@ span{
 }
 
 /* WORKS */
-
-.introworks{
-  width: 100%;
-  height: 50px;
-}
-
 #works {
  margin-top: 2%;
  margin-left: 2%;
