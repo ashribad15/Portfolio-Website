@@ -122,6 +122,48 @@ span{
   color: black;
 }
 
+@media only screen and (min-width: 768px) {
+    .infocontainer {
+        margin: 7% 2%;
+    }
+
+    .images {
+        display: block;
+        width: 40%;
+        height: auto;
+        position: fixed;
+        bottom: 0;
+        right: 100px;
+    }
+
+    .images img {
+        height: 60%;
+        position: fixed;
+        left: 65%;
+        bottom: 20%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5%;
+    }
+
+    .menu {
+        margin-top: 2%;
+    }
+
+    .infocontainer {
+        margin: 5% 2%;
+        text-align: center;
+    }
+
+    .hello {
+        font-size: 50px;
+    }
+}
 
 /* about me tab */
 
