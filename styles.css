@@ -235,6 +235,39 @@ span{
  .skills{
     margin-left:2%;
  }
+@media only screen and (max-width: 768px) {
+    .about-section {
+        padding: 20px;
+    }
+
+    .info-about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-about img {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .aboutme {
+        width: 100%;
+        text-align: center;
+    }
+
+    .info-details {
+        margin-left: 0;
+    }
+
+    .skillcontainer {
+        margin-top: 2%;
+    }
+
+    .skills {
+        margin-left: 0;
+    }
+}
+
 
  /*contact me*/
 
@@ -301,6 +334,21 @@ span{
     font-size: smaller;
     color: blue;
  }
+
+@media only screen and (max-width: 768px) {
+    .containercontact {
+        padding: 10px;
+    }
+
+    .containercontact h1 {
+        font-size: 40px;
+    }
+
+    input[type="submit"] {
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+}
 
  /*BLOGSECTION*/
 
@@ -370,6 +418,13 @@ span{
   border-style: solid;
 }
 
+@media only screen and (min-width: 768px) {
+    .blog-post {
+        width: calc(33.33% - 20px);
+    }
+}
+
+
 /* WORKS */
 
 .introworks{
@@ -426,3 +481,12 @@ span{
   color: orange;
   border-style: solid;
 }
+
+@media only screen and (min-width: 768px) {
+  .work-item {
+    display: inline-block;
+    width: 350px;
+    margin: 20px;
+  }
+}
+
