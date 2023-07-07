@@ -79,7 +79,7 @@
     transition: max-height 0.2s ease-out;
   }
 
-  #navbar-toggle:checked + .menu {
+  #navbar-toggle:checked ~ nav .menu {
     max-height: 300px;
   }
 
