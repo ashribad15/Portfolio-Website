@@ -74,68 +74,15 @@
 
 /* Styles for mobile devices */
 @media only screen and (max-width: 767px) {
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .navbar-toggle {
-    background: none;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 24px;
-    height: 20px;
-    padding: 0;
-  }
-
-  .navbar-toggle span {
-    background-color: white;
-    display: block;
-    height: 2px;
-    transition: background-color 0.3s ease-in-out;
-  }
-
   .menu {
-    position: absolute;
-    top: 100%;
-    right: 0;
+    display: block;
+    position: relative;
     background-color: #212121;
     width: 100%;
     padding: 10px;
+    text-align: center;
   }
 
-  .menu.active {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-
-  .menu li {
-    margin-bottom: 10px;
-  }
-
-  .navbar-toggle.active span:nth-child(2) {
-    opacity: 0;
-  }
-
-  .navbar-toggle.active span:nth-child(3) {
-    transform: rotate(45deg);
-    top: 10px;
-  }
-
-  .navbar-toggle.active span:nth-child(1) {
-    transform: rotate(-45deg);
-    top: -10px;
-  }
-  
-  .navbar-toggle:checked ~ nav .menu {
-    display: block;
-  }
-  
   .menu li {
     margin-bottom: 10px;
   }
