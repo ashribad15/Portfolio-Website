@@ -1,7 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Oswald:wght@200&family=Roboto&family=Source+Code+Pro&family=Tangerine:wght@700&display=swap');
 
-*{
+
+/* about me tab */
+ 
+  header {
+    background-color:black;
+    padding: 10px;
+  }
+  
+  .about-section {
+    padding: 40px;
+  }
+  
+  .about-section h1 {
+    text-align:left;
+  }
+  
+  .info-about img {
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+
+  *{
   margin: 0;
   padding: 0;
   font-family: sans-serif;
@@ -72,7 +93,7 @@ span{
   font-size: medium;
 }
 
-.infocontainer1 a{
+.infocontainer a{
   display: inline-block;
   margin: 10px;
   padding: 12px 18px;
@@ -84,7 +105,7 @@ span{
   cursor: pointer;
 }
 
-.infocontainer1 a:hover{
+.infocontainer a:hover{
   background-color: white;
   color:orange;
   border-style:solid;
@@ -154,36 +175,15 @@ span{
 }
 .navbar nav ul li a {
 text-decoration: none;
-color: orange;
+color: black;
 font-weight: bold;
 font-size: 15px;
 }
 .navbar nav ul li a:hover{
-color: black;
+color: orange;
 }
 
-}
-/* about me tab */
- 
-  header {
-    background-color:black;
-    padding: 10px;
-  }
-  
-  .about-section {
-    padding: 40px;
-  }
-  
-  .about-section h1 {
-    text-align:left;
-  }
-  
-  .info-about img {
-    width: 360px;
-    height: 360px;
-    border-radius: 50%;
-
-  }
+}}
   .info-about{
     display: flex;
     align-items: center;
