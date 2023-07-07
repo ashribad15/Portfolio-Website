@@ -99,22 +99,13 @@
 }
 
 /* Desktop Styles */
-
 @media only screen and (min-width: 769px) {
-  .navbar-toggle-label {
+  .navbar-toggle {
     display: none;
-  }
-
-  .menu {
-    display: flex;
-    justify-content: center;
-  }
-
-  .menu li {
-    margin-right: 20px;
   }
 }
 
+/*nav over*/
 
 .infocontainer{
   text-align: center;
