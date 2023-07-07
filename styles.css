@@ -84,43 +84,42 @@
     padding: 10px;
     text-align: center;
   }
+.navbar-toggle {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background-color: orange;
+  border: none;
+  cursor: pointer;
+}
 
-  .navbar-toggle {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 30px;
-    height: 30px;
-    background-color: #212121;
-    border: none;
-    cursor: pointer;
-  }
+.navbar-toggle::before,
+.navbar-toggle::after {
+  content: '';
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  height: 2px;
+  transition: all 0.3s ease;
+}
 
-  .navbar-toggle::before,
-  .navbar-toggle::after {
-    content: "";
-    position: absolute;
-    background-color: white;
-    width: 20px;
-    height: 2px;
-    transition: transform 0.3s ease;
-  }
+.navbar-toggle::before {
+  top: 0;
+  transform: translateY(-6px);
+}
 
-  .navbar-toggle::before {
-    top: 8px;
-  }
+.navbar-toggle::after {
+  bottom: 0;
+  transform: translateY(6px);
+}
 
-  .navbar-toggle::after {
-    top: 18px;
-  }
+.navbar-toggle.menu-open::before {
+  transform: rotate(45deg) translateY(-6px);
+}
 
-  .menu-open .navbar-toggle::before {
-    transform: translateY(10px) rotate(45deg);
-  }
-
-  .menu-open .navbar-toggle::after {
-    transform: translateY(-10px) rotate(-45deg);
-  }
+.navbar-toggle.menu-open::after {
+  transform: rotate(-45deg) translateY(6px);
+}
 
   .menu-open .menu {
     display: block;
