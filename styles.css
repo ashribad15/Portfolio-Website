@@ -45,9 +45,9 @@
 }
 
 .menu li a:hover {
-  background-color: #ddd;
+  
   color: orange;
-  text-decoration:underline;
+ 
   font-weight: bolder;
 }
 
