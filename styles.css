@@ -134,6 +134,22 @@ span{
       font-size: 50px;
   }
 
+  .social{
+  display: flex;
+  justify-content: center;
+  margin-top: 22px;
+}
+
+.social a{
+  font-size: 30px;
+  color: orange;
+  margin-right: 20px;
+}
+
+.social a:hover{
+  color: black;
+}
+
 }
 
 @media only screen and (max-width: 768px) {
