@@ -101,9 +101,7 @@ span{
 }
 
 .social a{
-  font-size: 30px;
   color: orange;
-  margin-right: 20px;
 }
 
 .social a:hover{
@@ -115,7 +113,7 @@ span{
       margin: 7% 2%;
   }
   .infocontainer p {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 
@@ -135,6 +133,7 @@ span{
   }
 
 }
+
 @media only screen and (max-width: 768px) {
 .navbar {
   padding: 10px;
