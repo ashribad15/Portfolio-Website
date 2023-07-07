@@ -17,38 +17,123 @@
   justify-content: center;
 }
 
-.navbar {
-  width: 100%;
-  padding: 10px 0;
-  margin-top: 2%;
+/* Common styles for both desktop and mobile */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
-.navbar nav ul {
+.navbar {
+  padding: 10px;
+  background-color: black;
+}
+
+.menu {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
+  
 }
 
-.navbar nav ul li {
-  margin-right: 20px;
+.menu li {
+  margin-left: 20px;
+ 
 }
 
-.navbar nav ul li:last-child {
-  margin-right: 50px;
+.menu li:first-child {
+  margin-left: 0;
 }
 
-.navbar nav ul li a {
+.menu a {
+  color: white;
   text-decoration: none;
-  color: black;
-  font-weight: bold;
-  font-size: 22px;
+  font-size: 18px;
+  padding: 10px;
+  transition: color 0.3s ease-in-out;
 }
-.navbar nav ul li a:hover{
+
+.menu a:hover {
   color: orange;
 }
+
+/* Styles for desktop devices */
+@media only screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .menu {
+    flex-direction: row;
+  }
+}
+
+/* Styles for mobile devices */
+@media only screen and (max-width: 767px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 20px;
+    padding: 0;
+  }
+
+  .navbar-toggle span {
+    background-color: white;
+    display: block;
+    height: 2px;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #212121;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .menu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .menu li {
+    margin-bottom: 10px;
+  }
+
+  .navbar-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navbar-toggle.active span:nth-child(3) {
+    transform: rotate(45deg);
+    top: 10px;
+  }
+
+  .navbar-toggle.active span:nth-child(1) {
+    transform: rotate(-45deg);
+    top: -10px;
+  }
+}
+
 
 .infocontainer{
   text-align: center;
@@ -136,33 +221,6 @@ span{
 
 }
 
-@media only screen and (max-width: 768px) {
-.navbar {
-  padding: 10px;
-  font-size: 15px;
-}
-
-.navbar nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.navbar nav ul li {
-  margin: 10px 0;
-  font-size: 15px;
-}
-.navbar nav ul li a {
-text-decoration: none;
-color: black;
-font-weight: bold;
-font-size: 15px;
-}
-.navbar nav ul li a:hover{
-color: orange;
-}
-
-}
 
 /* about me tab */
  
