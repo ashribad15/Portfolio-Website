@@ -474,8 +474,8 @@ span{
 }
 
 .work-item img {
-  width: auto;
-  height: auto;
+  width: 30px;
+  height: 30px;
 }
 
 .work-item h3 {
